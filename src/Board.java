@@ -497,7 +497,7 @@ public class Board {
 				((Green)one).paint(g,x,y);
 			}
 		}else{
-			
+			/*
 				if(colors.get(board[i][j]).compareTo("blue")==0){
 					g.setColor(Color.BLUE);
 					g.fillRect(x, y, 30, 30);
@@ -509,6 +509,7 @@ public class Board {
 					g.setColor(Color.BLACK);
 					g.drawRect(x, y, 30, 30);
 				}	
+				*/
 		}
 			
 		
