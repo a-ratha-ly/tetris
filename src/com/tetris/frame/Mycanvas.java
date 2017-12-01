@@ -1,4 +1,4 @@
-package tetris.frame;
+package com.tetris.frame;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Font;

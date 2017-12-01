@@ -1,4 +1,4 @@
-package tetris.figure;
+package com.tetris.figure;
 public class Orange extends Figures{
 	
 	private static int nb=6;

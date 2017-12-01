@@ -1,4 +1,4 @@
-package tetris.frame;
+package com.tetris.frame;
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;

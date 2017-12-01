@@ -1,12 +1,13 @@
-package tetris.frame;
-
-import tetris.figure.*;
-
+package com.tetris.frame;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Random;
+
+import com.tetris.figure.Blue;
+import com.tetris.figure.Figures;
+import com.tetris.figure.Green;
 
 
 public class Board {

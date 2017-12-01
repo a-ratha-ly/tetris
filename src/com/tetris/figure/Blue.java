@@ -1,4 +1,4 @@
-package tetris.figure;
+package com.tetris.figure;
 import java.awt.Color;
 import java.awt.Graphics;
 

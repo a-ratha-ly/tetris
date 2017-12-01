@@ -1,7 +1,4 @@
-package tetris.figure;
-import java.awt.Color;
-import java.awt.Graphics;
-
+package com.tetris.figure;
 
 public class Figures {
 	
