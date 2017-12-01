@@ -6,10 +6,10 @@ public class Orange extends Figures{
 	
 	public Orange(){
 		super();
-		orange= new int [4][4];	
-		orange[1][0]=1;
-		orange[2][0]=1;
-		orange[1][1]=1;
-		orange[2][1]=1;
+		orange = new int [4][4];	
+		orange[1][0] = 1;
+		orange[2][0] = 1;
+		orange[1][1] = 1;
+		orange[2][1] = 1;
 	}
 }

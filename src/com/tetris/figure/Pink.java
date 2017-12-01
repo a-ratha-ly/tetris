@@ -7,11 +7,11 @@ public class Pink extends Figures{
 	
 	public Pink(){
 		super();
-		pink= new int [4][4];
-		pink[0][1]=1;
-		pink[0][2]=1;
-		pink[1][1]=1;
-		pink[1][2]=1;
+		pink = new int [4][4];
+		pink[0][1] = 1;
+		pink[0][2] = 1;
+		pink[1][1] = 1;
+		pink[1][2] = 1;
 	}
 	
 	

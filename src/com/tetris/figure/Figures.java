@@ -2,7 +2,7 @@ package com.tetris.figure;
 
 public class Figures {
 	
-	public static int nb=0;
+	public static int nb = 0;
 	protected String color;
 	protected int figures;
 	protected String direction;
@@ -31,6 +31,5 @@ public class Figures {
 	public void setDirection(String direction) {
 		this.direction = direction;
 	}
-	
 	
 }

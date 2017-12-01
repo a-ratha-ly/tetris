@@ -7,11 +7,11 @@ public class Yellow extends Figures{
 	
 	public Yellow(){
 		super();
-		yellow= new int [4][4];
-		yellow[1][0]=1;
-		yellow[2][0]=1;
-		yellow[1][1]=1;
-		yellow[2][1]=1;
+		yellow = new int [4][4];
+		yellow[1][0] = 1;
+		yellow[2][0] = 1;
+		yellow[1][1] = 1;
+		yellow[2][1] = 1;
 	}
 	
 	

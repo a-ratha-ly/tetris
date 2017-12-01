@@ -5,9 +5,7 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Random;
 
-import com.tetris.figure.Blue;
-import com.tetris.figure.Figures;
-import com.tetris.figure.Green;
+import com.tetris.figure.*;
 
 
 public class Board {
