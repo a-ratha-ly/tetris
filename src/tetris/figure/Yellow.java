@@ -1,3 +1,4 @@
+package tetris.figure;
 
 public class Yellow extends Figures{
 	

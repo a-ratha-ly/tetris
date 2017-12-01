@@ -1,9 +1,9 @@
+package Main;
+
+import tetris.frame.*;
 import java.awt.Color;
 
 import javax.swing.JFrame;
-
-
-
 
 public class Main {
 

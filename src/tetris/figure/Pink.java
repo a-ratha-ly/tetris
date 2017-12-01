@@ -1,4 +1,4 @@
-
+package tetris.figure;
 public class Pink extends Figures{
 	
 	private static int nb=1;

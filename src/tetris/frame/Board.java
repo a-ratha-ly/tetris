@@ -1,8 +1,12 @@
+package tetris.frame;
+
+import tetris.figure.*;
+
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Random;
-
 
 
 public class Board {
@@ -61,8 +65,8 @@ public class Board {
 		
 		if(one instanceof Blue){
 			int tab[][]=((Blue)one).getBlue();
-			int posX=((Blue)one).positionX;
-			int posY=((Blue)one).positionY;
+			int posX=((Blue)one).getPositionX();
+			int posY=((Blue)one).getPositionY();
 		
 		
 			for(int i=posX,ii=0;i<posX+4;i++,ii++){
@@ -72,8 +76,8 @@ public class Board {
 			}
 		}else if(one instanceof Green){
 			int tab[][]=((Green)one).getGreen();
-			int posX=((Green)one).positionX;
-			int posY=((Green)one).positionY;
+			int posX=((Green)one).getPositionX();
+			int posY=((Green)one).getPositionY();
 		
 		
 			for(int i=posX,ii=0;i<posX+4;i++,ii++){
@@ -87,8 +91,8 @@ public class Board {
 	public void remove(){
 		
 		if(one instanceof Blue){
-			int posX=((Blue)one).positionX;
-			int posY=((Blue)one).positionY;
+			int posX=((Blue)one).getPositionX();
+			int posY=((Blue)one).getPositionY();
 			int tab[][]=((Blue)one).getBlue();
 		
 			for(int i=posX,ii=0;i<posX+4;i++,ii++){
@@ -98,8 +102,8 @@ public class Board {
 			}
 		}else if(one instanceof Green){
 			
-			int posX=((Green)one).positionX;
-			int posY=((Green)one).positionY;
+			int posX=((Green)one).getPositionX();
+			int posY=((Green)one).getPositionY();
 			int tab[][]=((Green)one).getGreen();
 		
 			for(int i=posX,ii=0;i<posX+4;i++,ii++){
@@ -120,8 +124,8 @@ public class Board {
 		if(one instanceof Blue){
 	
 			tab=((Blue)one).getBlue();
-			posXa=((Blue)one).positionX;
-			posYa=((Blue)one).positionY;
+			posXa=((Blue)one).getPositionX();
+			posYa=((Blue)one).getPositionY();
 		
 			if(one.getDirection().compareTo("left")==0){
 				if(board[posXa+2][posYa]==0 && board[posXa+3][posYa+1]==0 ){
@@ -146,14 +150,14 @@ public class Board {
 			}
 			
 			this.line();
-			posX=((Blue)one).positionX;
-			posY=((Blue)one).positionY;
+			posX=((Blue)one).getPositionX();
+			posY=((Blue)one).getPositionY();
 			
 		}else if(one instanceof Green){
 			
 			tab=((Green)one).getGreen();
-			posXa=((Green)one).positionX;
-			posYa=((Green)one).positionY;
+			posXa=((Green)one).getPositionX();
+			posYa=((Green)one).getPositionY();
 		
 			if(one.getDirection().compareTo("left")==0){
 				if(board[posXa+3][posYa+1]==0 && board[posXa+3][posYa+2]==0 ){
@@ -178,8 +182,8 @@ public class Board {
 			}
 			
 			this.line();
-			posX=((Green)one).positionX;
-			posY=((Green)one).positionY;
+			posX=((Green)one).getPositionX();
+			posY=((Green)one).getPositionY();
 		}
 		
 		for(int i=posX,ii=0;i<posX+4;i++,ii++){
@@ -199,8 +203,8 @@ public class Board {
 		
 		if(one instanceof Blue){
 			
-			posXa=((Blue)one).positionX;
-			posYa=((Blue)one).positionY;
+			posXa=((Blue)one).getPositionX();
+			posYa=((Blue)one).getPositionY();
 			
 			if(one.getDirection().compareTo("left")==0){
 				if(board[posXa+1][posYa+2]!=-1){
@@ -235,13 +239,13 @@ public class Board {
 			
 			tab=((Blue)one).getBlue();
 			
-			posX=((Blue)one).positionX;
-			posY=((Blue)one).positionY;
+			posX=((Blue)one).getPositionX();
+			posY=((Blue)one).getPositionY();
 		
 		}else if(one instanceof Green){
 			
-			posXa=((Green)one).positionX;
-			posYa=((Green)one).positionY;
+			posXa=((Green)one).getPositionX();
+			posYa=((Green)one).getPositionY();
 			
 			if(one.getDirection().compareTo("left")==0){
 				if(board[posXa+1][posYa+3]!=-1){
@@ -276,8 +280,8 @@ public class Board {
 			
 			tab=((Green)one).getGreen();
 			
-			posX=((Green)one).positionX;
-			posY=((Green)one).positionY;
+			posX=((Green)one).getPositionX();
+			posY=((Green)one).getPositionY();
 			
 		}
 		
@@ -299,8 +303,8 @@ public class Board {
 		if(one instanceof Blue){
 		
 			tab=((Blue)one).getBlue();
-			posXa=((Blue)one).positionX;
-			posYa=((Blue)one).positionY;
+			posXa=((Blue)one).getPositionX();
+			posYa=((Blue)one).getPositionY();
 			
 			if(one.getDirection().compareTo("left")==0 ){
 				if(board[posXa+1][posYa-1]==0 && board[posXa][posYa]==0 && board[posXa+2][posYa]==0){
@@ -319,14 +323,14 @@ public class Board {
 					((Blue)one).moveLeft();
 				}
 			}
-			posX=((Blue)one).positionX;
-			posY=((Blue)one).positionY;
+			posX=((Blue)one).getPositionX();
+			posY=((Blue)one).getPositionY();
 		
 		}else if(one instanceof Green){
 			
 			tab=((Green)one).getGreen();
-			posXa=((Green)one).positionX;
-			posYa=((Green)one).positionY;
+			posXa=((Green)one).getPositionX();
+			posYa=((Green)one).getPositionY();
 			
 			if(one.getDirection().compareTo("left")==0 ){
 				if(board[posXa][posYa+1]==0 && board[posXa+1][posYa+1]==0 && board[posXa+2][posYa]==0){
@@ -345,8 +349,8 @@ public class Board {
 					((Green)one).moveLeft();
 				}
 			}
-			posX=((Green)one).positionX;
-			posY=((Green)one).positionY;
+			posX=((Green)one).getPositionX();
+			posY=((Green)one).getPositionY();
 			
 		}
 		
@@ -367,8 +371,8 @@ public class Board {
 		
 			tab=((Blue)one).getBlue();
 			
-			posXa=((Blue)one).positionX;
-			posYa=((Blue)one).positionY;
+			posXa=((Blue)one).getPositionX();
+			posYa=((Blue)one).getPositionY();
 			
 			if(one.getDirection().compareTo("left")==0 ){
 				if(board[posXa][posYa+2]==0 && board[posXa+1][posYa+2]==0 && board[posXa+2][posYa+2]==0){
@@ -388,15 +392,15 @@ public class Board {
 				}
 			}
 			
-			posX=((Blue)one).positionX;
-			posY=((Blue)one).positionY;
+			posX=((Blue)one).getPositionX();
+			posY=((Blue)one).getPositionY();
 		
 		}else if(one instanceof Green){
 			
 			tab=((Green)one).getGreen();
 			
-			posXa=((Green)one).positionX;
-			posYa=((Green)one).positionY;
+			posXa=((Green)one).getPositionX();
+			posYa=((Green)one).getPositionY();
 			
 			if(one.getDirection().compareTo("left")==0 ){
 				if(board[posXa][posYa+3]==0 && board[posXa+1][posYa+3]==0 && board[posXa+2][posYa+3]==0){
@@ -416,8 +420,8 @@ public class Board {
 				}
 			}
 			
-			posX=((Green)one).positionX;
-			posY=((Green)one).positionY;
+			posX=((Green)one).getPositionX();
+			posY=((Green)one).getPositionY();
 			
 		}
 		

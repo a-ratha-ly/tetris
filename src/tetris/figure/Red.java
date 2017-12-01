@@ -1,4 +1,4 @@
-
+package tetris.figure;
 public class Red extends Figures{
 	
 	private static int nb=3;
